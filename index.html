@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Project Name</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Inject Bootstarp 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Google roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Custome Css -->
+    <link href="css/custom.css" rel="stylesheet" />
+    <style>
+        body {
+        }
+
+        .card {
+            background-color: #fff;
+            width: 35%;
+            margin: auto;
+            -moz-box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            -webkit-box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            border-radius: 1px;
+            height: auto;
+        }
+
+        .title {
+           color: black;
+        }
+
+        .pad10 {
+            padding: 10px;
+        }
+
+        .form-group {
+            border-radius: 0px;
+            width: 100%;
+        }
+
+        .form-control {
+            border-radius: 0px;
+        }
+
+        @media only screen and (max-width: 650px) {
+            .card {
+                width: 80%;
+                height: 70%;
+            }
+        }
+
+        #login {
+            cursor: pointer;
+            display: inline;
+            text-align: center;
+        }
+
+            #login:hover {
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+        .h20{
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login -->
+    <div style="text-align: center;" id="loginFrm">
+        <table border="0" style="height: 100vh; width: 100%;">
+            <tr>
+                <td style="text-align: center; vertical-align: middle;">
+                    <div class="card pad10">
+                        <div class="h20"></div>
+                        <h4 class="title">Your Project</h4>
+                        <div class="h20"></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="Email" placeholder="abc@xyz.com" id="loginEmail"
+                                           class="form-control">
+                                </div>
+                            </div>                           
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="password" placeholder="*******" id="loginPswd"
+                                           class="form-control" style="">
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="h20"></div>
+                        <div class="btn btn-default title" id="loginBtn" style="cursor: pointer;">
+                            Login
+                        </div>
+                        <hr style="width: 50%;" />
+                        <p>Don't have account yet?</p>
+                        <div class="btn btn-default title" id="goToSignup" style="cursor: pointer;">
+                            Signup
+                        </div>
+                        <div class="h20"></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- Signup -->
+    <div style="text-align: center;" id="signupFrm">
+        <table border="0" style="height: 100vh; width: 100%;">
+            <tr>
+                <td style="text-align: center; vertical-align: middle;">
+                    <div class="card pad10" style="width: 60%;">
+                        <div class="h20"></div>
+                        <h4 class="title">Your Project</h4>
+                        <div class="h20"></div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="form-group">
+                                    <select class="form-control" id="title">
+                                        <option value="Mr." selected>Mr.</option>
+                                        <option value="Mrs.">Mrs</option>
+                                        <option value="Miss">Miss</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="form-group">
+                                    <input type="text" placeholder="First Name" id="fName"
+                                           class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Last Name" id="lName"
+                                           class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="form-group">
+                                    <input type="email" placeholder="Email" id="email"
+                                           class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="form-group">
+                                    <input type="password" placeholder="Password" id="pswd"
+                                           class="form-control">
+                                </div>
+                            </div>                           
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="form-group">
+                                    <input type="number" placeholder="Mobile" id="mobile"
+                                           class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h20"></div>
+                        <div class="btn btn-default title" id="signUpBtn" style="cursor: pointer;" >
+                            Signup
+                        </div>
+                        <hr style="width: 50%;" />
+                        <p>Already have an account?</p>
+                        <div class="btn btn-default title" id="goToLogin" style="cursor: pointer;">
+                            Login
+                        </div>
+                        <div class="h20"></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <!-- Injcet Bootstrap 4 js, Jquery, My Custom js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
